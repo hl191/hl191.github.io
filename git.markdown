@@ -1,18 +1,61 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Git
+permalink: /tools/git
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# Git cheat sheet
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+## Basics
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+### Initializing
 
+```bash
+git clone https://github.com/hl191/hl191.github.io.git
+```
 
-[jekyll-organization]: https://github.com/jekyll
+### Daily business
+
+```bash
+git checkout .
+```
+
+```bash
+git commit -m "Commit message"
+```
+
+```bash
+git push
+```
+
+## Encountered problems and solutions:
+
+### HTTP proxy settings
+
+```bash
+# All current global settings
+git config --global --list
+
+# View current settings
+git config --global http.proxy
+git config --global https.proxy
+ 
+# Set the current proxy to http://127.0.0.1:1080
+git config --global http.proxy 'http://127.0.0.1:1080'
+git config --global https.proxy 'http://127.0.0.1:1080'
+```
+
+### SSL certificate problem
+```
+fatal: unable to access 'https://github.com/hl191/postgres-sql-playground.git/': SSL certificate problem: self signed certificate in certificate chain
+```
+
+Workaround for a self signed certificate in certificate chain when executing git commands:
+```bash
+git -c http.sslVerify=false clone https://github.com/hl191/hl191.github.io.git
+```
+
+Global setting
+```bash
+git config --global http.sslVerify false
+```
