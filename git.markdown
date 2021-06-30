@@ -32,6 +32,14 @@ git push
 
 ### HTTP proxy settings
 
+Show current proxy settings for Windows
+
+```
+netsh winhttp show proxy
+```
+
+Set git configuration
+
 ```bash
 # All current global settings
 git config --global --list
@@ -39,10 +47,14 @@ git config --global --list
 # View current settings
 git config --global http.proxy
 git config --global https.proxy
- 
+
 # Set the current proxy to http://127.0.0.1:1080
 git config --global http.proxy 'http://127.0.0.1:1080'
 git config --global https.proxy 'http://127.0.0.1:1080'
+
+# delete the proxy
+git config --global --unset http.proxy
+git config --global --unset https.proxy
 ```
 
 ### SSL certificate problem
