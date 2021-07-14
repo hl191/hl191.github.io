@@ -1,5 +1,7 @@
 ---
 layout: page
+title: Git cheat sheet
+exclude: true
 ---
 
 ## Basics

@@ -1,7 +1,7 @@
 ---
 layout: page
+title: Quartz
+exclude: true
 ---
-
-# Quartz
 
 Put some stuff out there about quartz
