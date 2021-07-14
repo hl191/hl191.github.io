@@ -6,4 +6,6 @@ permalink: /java/
 
 # Java Topics from around my head
 
-[Quartz](/quartz)
+## Frameworks
+
+ - [Quartz](/java/quartz)
