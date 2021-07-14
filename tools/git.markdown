@@ -2,8 +2,6 @@
 layout: page
 ---
 
-# Git cheat sheet
-
 ## Basics
 
 ### Initializing
