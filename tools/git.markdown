@@ -1,6 +1,5 @@
 ---
 layout: page
-title: Git
 permalink: /tools/git
 ---
 

@@ -15,7 +15,7 @@ Stay tuned as I'll add more content.
 Topics will include
 
 - Coding
-	- Java
+	- [Java](/java/)
 	- Spring
 	- SQL and PL/SQL
 	- Angular
@@ -25,7 +25,7 @@ Topics will include
 	- Openshift / Kubernetes
 	- Splunk
 	- Jenkins
-	- git
+	- [git](/tools/git)
 - Ethical Hacking
 	- Methods
 	- Tools
