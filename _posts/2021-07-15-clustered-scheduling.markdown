@@ -11,4 +11,4 @@ The most popular framework to do this is [Quartz](/java/quartz).
 
 But there are also innate Spring mechanisms to schedule tasks in a cluster such as Kubernetes, Openshift etc.
 
-I sketched out different approaches in my this repository: https://github.com/hl191/quartz-playground
+I sketched out different approaches in my this repository: [quartz-playground](https://github.com/hl191/quartz-playground)
