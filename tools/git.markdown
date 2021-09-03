@@ -26,6 +26,20 @@ git commit -m "Commit message"
 git push
 ```
 
+### Staging
+Stage all changes
+```bash
+git add .
+```
+Unstage all files
+```bash
+git reset
+```
+Last commit back to staging area
+```bash
+git reset --soft HEAD^
+```
+
 ## Encountered problems and solutions:
 
 ### HTTP proxy settings
