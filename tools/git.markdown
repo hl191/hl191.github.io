@@ -40,6 +40,17 @@ Last commit back to staging area
 git reset --soft HEAD^
 ```
 
+### Tags
+
+Delete all remote tags
+```bash
+git push origin --delete $(git tag -l)
+```
+Delete all local tags
+```bash
+git tag -d $(git tag -l)
+```
+
 ## Encountered problems and solutions:
 
 ### HTTP proxy settings
