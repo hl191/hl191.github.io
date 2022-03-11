@@ -18,7 +18,7 @@ Topics will include
 	- [Java](/java/)
 	- Spring
 	- SQL and PL/SQL
-	- Angular
+	- [Angular](/angular/)
 	- Python
 	- Bash
 - DevOps
