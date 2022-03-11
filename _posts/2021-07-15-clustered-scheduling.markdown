@@ -9,6 +9,6 @@ So I checked out some scheduling mechanisms for a Java application in a clustere
 
 The most popular framework to do this is [Quartz](/java/quartz).
 
-But there are also innate Spring mechanisms to schedule tasks in a cluster such as Kubernetes, Openshift etc.
+But there are also innate Spring mechanisms to schedule tasks in a cluster such as Kubernetes, OpenShift etc.
 
 I sketched out different approaches in my this repository: [quartz-playground](https://github.com/hl191/quartz-playground)
