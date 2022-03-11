@@ -9,3 +9,4 @@ permalink: /tools/
 ## General
 
  - [Git](/tools/git)
+ - [Sass](/tools/sass)

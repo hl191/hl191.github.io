@@ -51,6 +51,48 @@ Delete all local tags
 git tag -d $(git tag -l)
 ```
 
+## Migrating to a mono repository
+
+To reduce pipeline runs and providing the flexibility for sharing code as modules, migrating to a mono repo is a good option.
+Here are some helpful commands to do so.
+
+Assumed directory structure
+```
+monorepo
+service1
+service2
+```
+
+Target directory structure
+```
+monorepo/
+├── service1/
+├── service2/
+```
+
+Make sure ur fellow developers are informed and not blocked by your migration.
+
+```
+cd service1
+# Create a directory. This will be our subdirectory in monorepo
+mkdir service1
+# Move all files into the created directory
+ls -a1 | grep -v ^service1 | xargs -I{} git mv {} service1
+# Commit the move operation locally (no need to push)
+git commit -m "Migrate to monorepo"
+
+# Go into the mono repo
+cd ../monorepo
+# Add a new git remote which points to our local repository with the migrated directory structure
+git remote add service1 ../service1
+
+# Pull changes from master branch from service1 to our monorepo
+git pull service1 master --allow-unrelated-histories
+
+# Push monorepo with new content
+git push
+```
+
 ## Encountered problems and solutions:
 
 ### HTTP proxy settings

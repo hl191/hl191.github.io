@@ -19,7 +19,7 @@ Topics will include
 	- Spring
 	- SQL and PL/SQL
 	- [Angular](/angular/)
-	- Python
+	- [Python](/python/)
 	- Bash
 - DevOps
 	- Openshift / Kubernetes
