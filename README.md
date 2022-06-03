@@ -11,3 +11,8 @@ Update dependency gem like this:
 ```
 gem install commonmarker
 ```
+
+Update `Gemfile.lock`
+```Bash
+bundle lock --update
+```
